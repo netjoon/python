@@ -51,17 +51,11 @@ class LinkedList:
             current = current.next
 
 
-
-
-
-
-
-
 if __name__ == '__main__':
     llist = LinkedList()
     llist.head = Node(1)
     llist.addNodeTail(llist.head, 2)
-    llist.addNodeTail(llist.head,3)
+    llist.addNodeTail(llist.head, 3)
     llist.addNodeTail(llist.head, 4)
     llist.addNodeTail(llist.head, 5)
     llist.addNodeTail(llist.head, 6)
