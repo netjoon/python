@@ -21,18 +21,14 @@ class LinkedList:
     def addNodeTail(self,head,data):
         new_node = Node(data)
         current = head
-        print("current node is", current)
         while current.next != None:
             current = current.next
-        print(current)
         current.next = new_node
-        print(current.next)
         new_node.next = None
 
 
     def deleteNode(self,head,data):
         current = head
-        print("head data is ", head.data)
 
         while current:
             if head.data == data: #head node
@@ -41,7 +37,6 @@ class LinkedList:
                 break
             else:
                 if current.next.data == data and current.next.next != None:  #middle node
-                    print("current.next.data is ", current.next.data, current.next, current.next.next)
                     current.next.data = None
                     current.next = current.next.next
                     break
